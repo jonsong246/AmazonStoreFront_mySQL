@@ -3,14 +3,14 @@
 //Dependencies
 var mysql = require('mysql');
 var inquirer = require('inquirer');
-var Table = require('cli-table');
+var table = require('cli-table');
 
 //Connections to DB
 var connection = mysql.createConnection({
     host: "localhost",
-    port: 3100,
+    port: 3306,
     user: "root",
-    password : "rootroot",
+    password: "rootroot",
     database: "bamazon_db"
 });
 
